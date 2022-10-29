@@ -195,10 +195,15 @@ nav {
   transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
+.menu-button {
+  cursor: pointer;
+}
+
 .close-button {
   position: absolute;
   top: 1.5rem;
-  right: 1.5rem;
+  right: 2.5rem;
+  cursor: pointer;
 }
 
 nav.open {
