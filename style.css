@@ -259,8 +259,8 @@ nav.open {
 }
 .main-nav .arrow-a,
 .main-nav .arrow-b {
-  -webkit-transition: rotate 300ms ease-in-out;
-  transition: rotate 300ms ease-in-out;
+  -webkit-transition: rotate 100ms ease-in-out;
+  transition: rotate 100ms ease-in-out;
 }
 .main-nav .arrow-a.rotate,
 .main-nav .arrow-b.rotate {
