@@ -21,12 +21,14 @@ function dropDown1() {
 	document.getElementById('dropdown-1').classList.toggle('show')
 	document.getElementById('dropdown-2').classList.remove('show')
 	rotateArrowA.classList.toggle('rotate')
+	rotateArrowB.classList.remove('rotate')
 }
 
 function dropDown2() {
 	document.getElementById('dropdown-2').classList.toggle('show')
 	document.getElementById('dropdown-1').classList.remove('show')
 	rotateArrowB.classList.toggle('rotate')
+	rotateArrowA.classList.remove('rotate')
 }
 
 window.addEventListener('click', function (e) {
