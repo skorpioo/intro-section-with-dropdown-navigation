@@ -202,7 +202,7 @@ nav {
 .close-button {
   position: absolute;
   top: 1.5rem;
-  right: 2.5rem;
+  right: 1.65rem;
   cursor: pointer;
 }
 
@@ -222,6 +222,7 @@ nav.open {
   gap: 1.25em;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
+  list-style: none;
 }
 .main-nav__dropdown {
   display: none;
@@ -251,9 +252,19 @@ nav.open {
       -ms-flex-align: center;
           align-items: center;
   gap: 1em;
+  list-style: none;
 }
 .main-nav__droplink img {
   width: 1rem;
+}
+.main-nav .arrow-a,
+.main-nav .arrow-b {
+  -webkit-transition: rotate 300ms ease-in-out;
+  transition: rotate 300ms ease-in-out;
+}
+.main-nav .arrow-a.rotate,
+.main-nav .arrow-b.rotate {
+  rotate: 180deg;
 }
 
 .header-buttons-mobile {
@@ -396,7 +407,7 @@ nav.open {
     margin: 0;
   }
   .container {
-    margin: 5rem auto 7rem;
+    margin: 4rem auto 6rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -416,8 +427,8 @@ nav.open {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-margin-before: 8.5rem;
-            margin-block-start: 8.5rem;
+    -webkit-margin-before: 6.5rem;
+            margin-block-start: 6.5rem;
   }
   .container .content p {
     width: 45ch;
@@ -443,6 +454,8 @@ nav.open {
   }
   .container .desktop {
     display: block;
+    width: 90%;
+    margin-left: auto;
   }
   .container .mobile {
     display: none;

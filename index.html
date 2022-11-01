@@ -3,16 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
 
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./images/favicon-32x32.png"
-		/>
-		<link rel="stylesheet" href="style.css" />
-		<script defer src="app.js"></script>
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<link rel="stylesheet" href="./style.css" />
+		<script defer src="./app.js"></script>
 
 		<title>Frontend Mentor | Intro section with dropdown navigation</title>
 	</head>
@@ -22,24 +16,21 @@
 			<div class="logo">
 				<img src="./images/logo.svg" alt="snap logo" />
 			</div>
-			<div aria-label="open menu" class="menu-button">
+			<div class="menu-button">
 				<img src="./images/icon-menu.svg" alt="open menu" />
 			</div>
 			<nav>
-				<div aria-label="close menu" class="close-button">
+				<div class="close-button">
 					<img src="./images/icon-close-menu.svg" alt="close menu" />
 				</div>
 				<ul class="main-nav">
 					<li onclick="dropDown1()" class="main-nav__link" data-dropdown-link>
-						<a href="#"
-							>Features
-							<img class="arrow" src="./images/icon-arrow-down.svg" alt=""
-						/></a>
+						<a href="#">Features <img class="arrow-a" src="./images/icon-arrow-down.svg" alt="" /></a>
 
 						<ul id="dropdown-1" class="main-nav__dropdown left" data-dropdown-menu>
 							<li class="main-nav__droplink">
 								<img src="./images/icon-todo.svg" alt="" />
-								<a target="_blank" href="https://sonntagshof.at">Todo list</a>
+								<a target="_blank" href="#">Todo list</a>
 							</li>
 							<li class="main-nav__droplink">
 								<img src="./images/icon-calendar.svg" alt="" />
@@ -54,14 +45,10 @@
 								<a href="#">Planning</a>
 							</li>
 						</ul>
-
 					</li>
-					
+
 					<li onclick="dropDown2()" class="main-nav__link" data-dropdown-link>
-						<a href="#"
-							>Company
-							<img class="arrow" src="./images/icon-arrow-down.svg" alt=""
-						/></a>
+						<a href="#">Company <img class="arrow-b" src="./images/icon-arrow-down.svg" alt="" /></a>
 
 						<ul id="dropdown-2" class="main-nav__dropdown right" data-dropdown-menu>
 							<li class="main-nav__droplink">
@@ -74,16 +61,16 @@
 								<a href="#">Blog</a>
 							</li>
 						</ul>
-						<li class="main-nav__link">
-							<a href="#careers">Careers</a>
-						</li>
-						<li class="main-nav__link">
-							<a href="#about">About</a>
-						</li>
-					</ul>
-
 					</li>
-					
+
+					<li class="main-nav__link">
+						<a href="#careers">Careers</a>
+					</li>
+					<li class="main-nav__link">
+						<a href="#about">About</a>
+					</li>
+				</ul>
+
 				<div class="header-buttons-mobile">
 					<button>Login</button>
 					<button class="outline">Register</button>
@@ -100,8 +87,8 @@
 				<div class="content">
 					<h1 class="title">Make remote work</h1>
 					<p>
-						Get your team in sync, no matter your location. Streamline
-						processes, create team rituals, and watch productivity soar.
+						Get your team in sync, no matter your location. Streamline processes, create team rituals, and
+						watch productivity soar.
 					</p>
 					<button class="solid">Learn more</button>
 					<div class="social">
@@ -113,16 +100,8 @@
 				</div>
 
 				<div class="hero-image">
-					<img
-						class="desktop"
-						src="./images/image-hero-desktop.png"
-						alt="hero image desktop"
-					/>
-					<img
-						class="mobile"
-						src="./images/image-hero-mobile.png"
-						alt="hero image mobile"
-					/>
+					<img class="desktop" src="./images/image-hero-desktop.png" alt="hero image desktop" />
+					<img class="mobile" src="./images/image-hero-mobile.png" alt="hero image mobile" />
 				</div>
 			</div>
 		</main>
